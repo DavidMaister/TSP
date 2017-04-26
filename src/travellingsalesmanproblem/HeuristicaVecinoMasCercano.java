@@ -6,7 +6,8 @@
 package travellingsalesmanproblem;
 
 /**
- *
+ * Clase que implementa la heurstica del vecino mas cercano.
+ * Su unico dato miembro es un objeto Problema.
  * @author david
  */
 public class HeuristicaVecinoMasCercano {
@@ -18,6 +19,12 @@ public class HeuristicaVecinoMasCercano {
         problema = p;
     }
     
+    
+    /**
+     * Obtiene la mejor ruta segun la heuristica del vecino mas cercano.
+     * Prueba todas las posibles combinaciones y se queda con la mejor ruta.
+     * @return Devuelve la ruta que ha obtenido como mejor ruta.
+     */
     public Ruta obtenerMejorRuta(){
         Ruta mejorRuta = null;
         
